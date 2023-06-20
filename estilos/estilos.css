@@ -1,2 +1,50 @@
 /* hoja de estilos del master de css, proyecto 1, portafolio profesional */
 /* hoja de estilos comunes a todas las páginas */
+
+/* reseteo de margin y padding, quitar estilo de los enlaces */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* variables de colores */
+:root {
+    /* colores principales en las web */
+    --color-principal: #fff;
+    --color-azul: #04B4E0;
+    --color-bg: #f0f4f6;
+    /* colores para las fuentes */
+    --color-titulo: #000;
+    --color-subtitulo: #888;
+    --color-texto: #555;
+    /* colores para los iconos */
+    --color-iconos:#b5b6b7;
+}
+html{
+    font-size: 10px;
+}
+body{
+    /*hace que el scroll sea suavizado*/
+    scroll-behavior: smooth;
+    /* definir el la fuente:family, size y color */
+    font-family: "poppins";
+    font-size: 1.5rem;
+    color:var(--color-texto);
+    /* cuanto va a ocupar el body */
+    width: 100%;
+    height: auto;
+    /* color de fondo del body */
+    background: var(--color-bg);
+}
+h1{
+    color:var(--color-titulo);
+    
+}
+h2,h3, h4,h5,h6{
+    color:var(--color-subtitulo)
+}
