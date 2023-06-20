@@ -23,28 +23,52 @@ a {
     --color-subtitulo: #888;
     --color-texto: #555;
     /* colores para los iconos */
-    --color-iconos:#b5b6b7;
+    --color-iconos: #b5b6b7;
 }
-html{
+
+html {
     font-size: 10px;
 }
-body{
+
+body {
     /*hace que el scroll sea suavizado*/
     scroll-behavior: smooth;
     /* definir el la fuente:family, size y color */
     font-family: "poppins";
     font-size: 1.5rem;
-    color:var(--color-texto);
+    color: var(--color-texto);
     /* cuanto va a ocupar el body */
     width: 100%;
     height: auto;
     /* color de fondo del body */
     background: var(--color-bg);
 }
-h1{
-    color:var(--color-titulo);
-    
+
+h1 {
+    color: var(--color-titulo);
+
 }
-h2,h3, h4,h5,h6{
-    color:var(--color-subtitulo)
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-subtitulo)
+}
+
+.nav_icon {
+    color: var(--color-iconos);
+}
+
+.rrss_icon {
+    color: var(--color-principal);
+}
+
+.layout {
+    position: relative;
+    width: 75%;
+    height: 80vh;
+    margin: 10vh auto;
+
 }
