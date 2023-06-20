@@ -7,11 +7,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 a {
     text-decoration: none;
 }
-
+li{
+    list-style: none;
+}
 /* variables de colores */
 :root {
     /* colores principales en las web */
@@ -25,11 +26,9 @@ a {
     /* colores para los iconos */
     --color-iconos: #b5b6b7;
 }
-
 html {
     font-size: 10px;
 }
-
 body {
     /*hace que el scroll sea suavizado*/
     scroll-behavior: smooth;
@@ -43,12 +42,9 @@ body {
     /* color de fondo del body */
     background: var(--color-bg);
 }
-
 h1 {
     color: var(--color-titulo);
-
 }
-
 h2,
 h3,
 h4,
@@ -56,19 +52,9 @@ h5,
 h6 {
     color: var(--color-subtitulo)
 }
-
 .nav_icon {
     color: var(--color-iconos);
 }
-
 .rrss_icon {
     color: var(--color-principal);
-}
-
-.layout {
-    position: relative;
-    width: 75%;
-    height: 80vh;
-    margin: 10vh auto;
-
 }

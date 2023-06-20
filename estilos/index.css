@@ -1,2 +1,19 @@
 /* proyecto 1 del master en css, portafolio profesional */
 /* hoja de estilos especificos de la pagina de inicio */
+
+.layout {
+    position: relative;
+    width: 75%;
+    height: 80vh;
+    margin: 10vh auto;
+/* definir el grid */
+display: grid;
+grid-template-areas:
+ "main nav";
+ grid-template-columns:90% 5%;
+ /* para ver lo que ocupa exactamente este contedor */
+ border:1px solid mediumspringgreen;
+/* border radius y sombra  */
+border-radius: 4rem;
+box-shadow: 0 0 100px rgba(0, 0, 0,0.25);
+}
