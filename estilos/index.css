@@ -13,11 +13,6 @@ body{
 display: grid;
     grid-template-columns: 25% 70% 5%;
     grid-template-areas: "header section nav";
-    /* ******************* */
-    /* ****eliminar******* */
-     /* para ver lo que ocupa exactamente este contedor */
- border:1px solid mediumspringgreen;
- /* *************************** */
 /* border radius y sombra  */
 border-radius: 4rem;
 box-shadow: 0 0 100px rgba(0, 0, 0,0.25);
