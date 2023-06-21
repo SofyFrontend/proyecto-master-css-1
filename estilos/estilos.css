@@ -41,6 +41,9 @@ body {
     height: auto;
     /* color de fondo del body */
     background: var(--color-bg);
+    background-image: url(../assets-proyecto1/img/fondo.png);
+    background-size: cover;
+    
 }
 h1 {
     color: var(--color-titulo);
@@ -55,6 +58,13 @@ h6 {
 .nav_icon {
     color: var(--color-iconos);
 }
+.nav_icon:hover{
+    color:var(--color-azul);
+    font-size: 1.2em;
+}
 .rrss_icon {
     color: var(--color-principal);
+}
+.nav__overlay{
+    display: none;
 }
