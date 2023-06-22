@@ -66,9 +66,7 @@ h6 {
 .rrss_icon {
     color: var(--color-principal);
 }
-.nav__overlay{
-    display: none;
-}
+
 .layout {
     position: relative;
     width: 75%;
@@ -167,4 +165,26 @@ header{
     background-color: var(--color-principal);
     min-height: 100%;
     border-radius: 4rem 0 0 4rem;
+}
+ul{
+    border-radius: 4rem;
+    box-shadow: 0 0 100px rgba(0, 0, 0,0.25);
+}
+li{
+    padding: 1.5rem;
+}
+.nav__overlay{
+    position: absolute;
+    right: 0;
+    margin-top: -3rem;
+    padding: 0.5rem 1rem;
+    display: block;
+    opacity:0;
+white-space:nowrap;
+    color:var(--color-principal);
+    background-color: var(--color-azul);
+}
+li:hover .nav__overlay{
+    opacity: 1;
+    width:10%;
 }
