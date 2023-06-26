@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,44 +11,105 @@
     <link rel="stylesheet" href="assets-proyecto1/fonts/poppins/poppins.css">
     <!-- hola de stylos comunes -->
     <link rel="stylesheet" href="estilos/estilos.css">
-    
+    <!-- hoja de estilo individual -->
+    <link rel="stylesheet" href="estilos/sobre-mi.css">
 </head>
+
 <body>
-    <nav>
-        <a href="index.html"><i class="nav_icon fa-solid fa-house"></i>
-            <span class="nav__overlay">Inicio</span></a>
-            <a href="sobre-mi.html"><i class="nav_icon fa-solid fa-user"></i>
-            <span class="nav__overlay">Sobre mi</span></a>
-        <a href="estudios.html"><i class="nav_icon fa-solid fa-graduation-cap"></i>
-            <span class="nav__overlay">Estudios</span></a>
-        <a href="portafolio.html"><i class="nav_icon fa-solid fa-briefcase"></i>
-            <span class="nav__overlay">Portafolio</span></a>
-        <a href="blog.html"><i class="nav_icon fa-solid fa-book"></i>
-            <span class="nav__overlay">Blog</span></a>
-        <a href="contacto.html"><i class="nav_icon fa-solid fa-envelope"></i>
-            <span class="nav__overlay">Contacto</span></a>
-    </nav>
-    <main>
-    <header>
-        <img src="assets-proyecto1/img/default-user.jpg" alt="imagen de una persona" class="cabecera__imagen">
-        <h1 class="cabecera__nombre">Asoka Frontend</h1>
-        <h2 class="cabecera__profesion">diseño y desarrollo web</h2>
-        <div class="cabecera__rrss">
-            <i class="rrss_icon fa-brands fa-youtube"></i>
-            <i class="rrss_icon fa-brands fa-linkedin"></i>
-            <i class="rrss_icon fa-brands fa-instagram"></i>
-        </div>
-        <!-- poner un botón de uiverse  -->
-        <!-- de momento mantener este que esta diseñado -->
-<div class="cabecera__boton">
-    <a href="#" class="boton__enlace">Descargar CV</a>
-</div>
-        <!-- fin del codigo del boton -->
-        <div class="cabecera__pie"><span>&copy;2024 Sofy Frontend</span> </div>
-    </header>
-    <section>
-       
-    </section>
-</main>
+    <div class="layout">
+        <header>
+            <div class="cabecera__circulo">
+                <img src="assets-proyecto1/img/default-user.jpg" alt="imagen de una persona" class="cabecera__imagen">
+            </div>
+
+            <h1 class="cabecera__nombre">Asoka Frontend</h1>
+            <h2 class="cabecera__profesion">Desarrollo web</h2>
+            <div class="cabecera__rrss">
+                <i class="rrss_icon fa-brands fa-youtube"></i>
+                <i class="rrss_icon fa-brands fa-linkedin"></i>
+                <i class="rrss_icon fa-brands fa-instagram"></i>
+            </div>
+            <!-- poner un botón de uiverse  -->
+            <!-- de momento mantener este que esta diseñado -->
+            <div class="cabecera__boton">
+                <a href="#" class="boton__enlace">Descargar CV</a>
+            </div>
+            <!-- fin del codigo del boton -->
+            <div class="cabecer__pie"><span>&copy;2024 Sofy Frontend</span> </div>
+        </header>
+        <section class="principal">
+            <div class="principal_contenido">
+                <!-- aqui va el contenido principal de la web  -->
+                <article class="presentacion">
+                    <h2 class="presentacion__titulo">Sobre <span class="__titulo--azul">Mi</span></h2>
+                    <div class="presentacion_columnas">
+                        <p class="presentacion__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolore,
+                            distinctio. Doloribus, nihil! Magni, aliquid. Quaerat non architecto esse fuga modi dolore
+                            et.
+                            Repellat sapiente aut nihil ipsam cum architecto maxime obcaecati, quam aliquid sequi eos
+                            quis
+                            minus
+                            rerum veritatis explicabo odio in laborum provident id? Dolor, consequatur! Dolor, provident
+                            nisi?
+                        </p>
+                        <ul class="presentacion__lista">
+                            <li>Edad: 30</li>
+                            <li>País: España</li>
+                            <li>Dirección: Calle Algo nº007,35570, Sitio</li>
+                            <li>Correo: minombre@midominio.com</li>
+                            <li> Telefono: 666 777 999</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="hago">
+                    <h3>Lo que <span class="__titulo--azul">hago</span></h2>
+                        <div class="hago_programacion">
+                            <h3 class="hago-titulo">
+                                <i class="fa-solid fa-code"></i> Programación
+                            </h3>
+                            <p class="hago-parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+                                quasi mollitia modi fuga,
+                                repellat earum vitae corporis sit quisquam! Iusto error aspernatur ratione explicabo
+                                distinctio ab consectetur magni numquam labore, quos nobis at pariatur sed quisquam
+                                eveniet
+                                dolores et. Sapiente repellendus maiores nulla quisquam nesciunt tempore debitis
+                                architecto
+                                voluptas dolores!</p>
+                        </div>
+                        <div class="hago_formacion">
+                            <h3 class="hago_titulo"><i class="fa-solid fa-chalkboard-user"></i>Formación</h3>
+                            <p class="hago-parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+                                quasi mollitia modi fuga,
+                                repellat earum vitae corporis sit quisquam! Iusto error aspernatur ratione explicabo
+                                distinctio ab consectetur magni numquam labore, quos nobis at pariatur sed quisquam
+                                eveniet
+                                dolores et. Sapiente repellendus maiores nulla quisquam nesciunt tempore debitis
+                                architecto
+                                voluptas dolores!</p>
+                        </div>
+                </article>
+
+                <!-- aqui finaliza el contenido principal de la web -->
+            </div>
+        </section>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html"><i class="nav_icon fa-solid fa-house"></i>
+                        <span class="nav__overlay">Inicio</span></a></li>
+                <li><a href="sobre-mi.html"><i class="nav_icon fa-solid fa-user"></i>
+                        <span class="nav__overlay">Sobre mi</span></a></li>
+                <li><a href="estudios.html"><i class="nav_icon fa-solid fa-graduation-cap"></i>
+                        <span class="nav__overlay">Estudios</span></a></li>
+                <li><a href="portafolio.html"><i class="nav_icon fa-solid fa-briefcase"></i>
+                        <span class="nav__overlay">Portafolio</span></a></li>
+                <li><a href="blog.html"><i class="nav_icon fa-solid fa-book"></i>
+                        <span class="nav__overlay">Blog</span></a></li>
+                <li><a href="contacto.html"><i class="nav_icon fa-solid fa-envelope"></i>
+                        <span class="nav__overlay">Contacto</span></a></li>
+            </ul>
+        </nav>
+    </div>
 </body>
+
 </html>

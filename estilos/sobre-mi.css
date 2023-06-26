@@ -1,0 +1,24 @@
+/* esta es la hoja especifica para el estilo de la página sobre-mi.html */
+.principal{
+    /* hacer que el scroll de la web esté solo en la caja blanca que es la section */
+    overflow: scroll;
+}
+.presentacion{
+    padding:5% 5%;
+}
+.presentacion__titulo{
+    padding-bottom: 5%;
+    font-size: 3rem;
+}
+.presentacion_columnas{
+    display: grid;
+grid-template-columns: 60% 40%;
+column-gap: 2%;
+}
+ul{
+    box-shadow: none;
+}
+li{padding: 0.4rem;}
+.__titulo--azul{
+    color: var(--color-azul);
+}
