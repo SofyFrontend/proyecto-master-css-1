@@ -3,7 +3,7 @@
     /* hacer que el scroll de la web esté solo en la caja blanca que es la section */
     overflow: scroll;
 }
-.presentacion{
+.principal_contenido{
     padding:5% 5%;
 }
 .presentacion__titulo{

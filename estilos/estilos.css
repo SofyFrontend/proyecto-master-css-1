@@ -7,12 +7,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
-li{
+
+.menu__item {
     list-style: none;
 }
+
 /* variables de colores */
 :root {
     /* colores principales en las web */
@@ -26,9 +29,11 @@ li{
     /* colores para los iconos */
     --color-iconos: #b5b6b7;
 }
+
 html {
     font-size: 10px;
 }
+
 body {
     /*hace que el scroll sea suavizado*/
     scroll-behavior: smooth;
@@ -46,9 +51,11 @@ body {
     /* para que no tengan scroll la página  */
     overflow: hidden;
 }
+
 h1 {
     color: var(--color-titulo);
 }
+
 h2,
 h3,
 h4,
@@ -56,13 +63,16 @@ h5,
 h6 {
     color: var(--color-subtitulo)
 }
+
 .nav_icon {
     color: var(--color-iconos);
 }
-.nav_icon:hover{
-    color:var(--color-azul);
+
+.nav_icon:hover {
+    color: var(--color-azul);
     font-size: 1.2em;
 }
+
 .rrss_icon {
     color: var(--color-principal);
 }
@@ -72,21 +82,24 @@ h6 {
     width: 75%;
     height: 80vh;
     margin: 10vh auto;
-/* definir el grid */
-display: grid;
+    /* definir el grid */
+    display: grid;
     grid-template-columns: 25% 70% 5%;
     grid-template-areas: "header section nav";
-/* border radius y sombra  */
-border-radius: 4rem;
-box-shadow: 0 0 100px rgba(0, 0, 0,0.25);
+    /* border radius y sombra  */
+    border-radius: 4rem;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.25);
 }
-main{
+
+main {
     grid-area: main;
 }
-nav{
-    grid-area:nav;
+
+.menu {
+    grid-area: nav;
 }
-header{
+
+header {
     grid-area: header;
     background-color: var(--color-azul);
     height: 100%;
@@ -98,10 +111,10 @@ header{
     /* para poner un scroll dentro de una zona*/
     /******* overflow: scroll;******/
     /* fin de la propiedad  */
-    
+
 }
 
-.cabecera__imagen{
+.cabecera__imagen {
     width: 18rem;
     margin-top: 7%;
     background-color: var(--color-principal);
@@ -109,13 +122,15 @@ header{
     border-radius: 20rem;
     /* z-index: 2; */
 }
-.cabecera__circulo{
+
+.cabecera__circulo {
     z-index: 1;
 }
-.cabecera__circulo::after{
+
+.cabecera__circulo::after {
     content: "";
     position: absolute;
-    top:12%;
+    top: 12%;
     left: 7%;
     z-index: -1;
     width: 15%;
@@ -124,67 +139,80 @@ header{
     background-size: 0.6rem 0.6rem;
     border-radius: 30rem;
 }
-.principal{
+
+.principal {
     grid-area: section;
 }
+
 .cabecera__nombre,
 .cabecera__profesion,
-.boton__enlace{
-    color:var(--color-principal);
+.boton__enlace {
+    color: var(--color-principal);
 }
-.cabecera__nombre{
+
+.cabecera__nombre {
     margin-top: 2.6rem;
 }
-.boton__enlace{
-    border:3px solid var(--color-principal);
+
+.boton__enlace {
+    border: 3px solid var(--color-principal);
     border-radius: 4rem;
     box-shadow: 1px 1px 1px var(--color-principal);
     padding: 2rem;
 }
-.boton__enlace:hover{
+
+.boton__enlace:hover {
     background-color: var(--color-principal);
     color: var(--color-azul);
-    box-shadow:   0 0 5px rgba(0, 0, 0,0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     transition: all 500ms ease-in-out;
 }
-.rrss_icon{
+
+.rrss_icon {
     opacity: 0.7;
     font-size: 2rem;
     padding: 1rem;
     border-radius: 1rem;
 }
-.rrss_icon:hover{
+
+.rrss_icon:hover {
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.2);
     transition: all 300ms ease-in;
 }
-.principal{
+
+.principal {
     background-color: var(--color-azul);
 }
-.principal_contenido{
+
+.principal_contenido {
     background-color: var(--color-principal);
     min-height: 100%;
     border-radius: 4rem 0 0 4rem;
 }
+
 .menu{
     border-radius: 4rem;
-    box-shadow: 0 0 100px rgba(0, 0, 0,0.25);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.25);
 }
-li{
+
+.menu__item {
     padding: 1.5rem;
 }
-.nav__overlay{
+
+.nav__overlay {
     position: absolute;
     right: 5rem;
     margin-top: -3rem;
     padding: 0.5rem 1rem;
     display: block;
-    opacity:0;
-white-space:nowrap;
-    color:var(--color-principal);
+    opacity: 0;
+    white-space: nowrap;
+    color: var(--color-principal);
     background-color: var(--color-azul);
 }
-li:hover .nav__overlay{
+
+.menu__item:hover .nav__overlay {
     opacity: 1;
-    width:10%;
+    width: 10%;
 }
