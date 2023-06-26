@@ -13,29 +13,20 @@
     
 </head>
 <body>
-    <nav>
-        <a href="index.html"><i class="fa-solid fa-house"></i>
-            <span class="nav__overlay">Inicio</span></a>
-        <a href="sobre-mi.html"><i class="fa-solid fa-user"></i>
-            <span class="nav__overlay">Sobre mi</span></a>
-        <a href="estudios.html"><i class="fa-solid fa-graduation-cap"></i>
-            <span class="nav__overlay">Estudios</span></a>
-        <a href="portafolio.html"><i class="fa-solid fa-briefcase"></i>
-            <span class="nav__overlay">Portafolio</span></a>
-        <a href="blog.html"><i class="fa-solid fa-book"></i>
-            <span class="nav__overlay">Blog</span></a>
-        <a href="contacto.html"><i class="fa-solid fa-envelope"></i>
-            <span class="nav__overlay">Contacto</span></a>
-    </nav>
-    <main>
+    <div class="layout">
+
+
         <header>
-            <img src="assets-proyecto1/img/default-user.jpg" alt="imagen de una persona" class="cabecera__imagen">
+            <div class="cabecera__circulo">
+                <img src="assets-proyecto1/img/default-user.jpg" alt="imagen de una persona" class="cabecera__imagen">
+            </div>
+
             <h1 class="cabecera__nombre">Asoka Frontend</h1>
-            <h2 class="cabecera__profesion">diseño y desarrollo web</h2>
+            <h2 class="cabecera__profesion">Desarrollo web</h2>
             <div class="cabecera__rrss">
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-instagram"></i>
+                <i class="rrss_icon fa-brands fa-youtube"></i>
+                <i class="rrss_icon fa-brands fa-linkedin"></i>
+                <i class="rrss_icon fa-brands fa-instagram"></i>
             </div>
             <!-- poner un botón de uiverse  -->
             <!-- de momento mantener este que esta diseñado -->
@@ -45,9 +36,30 @@
             <!-- fin del codigo del boton -->
             <div class="cabecer__pie"><span>&copy;2024 Sofy Frontend</span> </div>
         </header>
-    <section>
-       
-    </section>
-</main>
+        <section class="principal">
+            <div class="principal_contenido">
+                <!-- aqui va el contenido principal de la web  -->
+
+
+                <!-- aqui finaliza el contenido principal de la web -->
+            </div>
+        </section>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html"><i class="nav_icon fa-solid fa-house"></i>
+                        <span class="nav__overlay">Inicio</span></a></li>
+                <li><a href="sobre-mi.html"><i class="nav_icon fa-solid fa-user"></i>
+                        <span class="nav__overlay">Sobre mi</span></a></li>
+                <li><a href="estudios.html"><i class="nav_icon fa-solid fa-graduation-cap"></i>
+                        <span class="nav__overlay">Estudios</span></a></li>
+                <li><a href="portafolio.html"><i class="nav_icon fa-solid fa-briefcase"></i>
+                        <span class="nav__overlay">Portafolio</span></a></li>
+                <li><a href="blog.html"><i class="nav_icon fa-solid fa-book"></i>
+                        <span class="nav__overlay">Blog</span></a></li>
+                <li><a href="contacto.html"><i class="nav_icon fa-solid fa-envelope"></i>
+                        <span class="nav__overlay">Contacto</span></a></li>
+            </ul>
+        </nav>
+    </div>
 </body>
 </html>
