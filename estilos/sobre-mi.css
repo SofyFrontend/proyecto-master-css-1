@@ -1,24 +1,57 @@
 /* esta es la hoja especifica para el estilo de la página sobre-mi.html */
-.principal{
+.principal {
     /* hacer que el scroll de la web esté solo en la caja blanca que es la section */
     overflow: scroll;
 }
-.principal_contenido{
-    padding:5% 5%;
+
+.principal_contenido {
+    padding: 5% 5%;
 }
-.presentacion__titulo{
+
+.presentacion__titulo {
     padding-bottom: 5%;
     font-size: 3rem;
 }
-.presentacion_columnas{
+
+.presentacion_columnas {
     display: grid;
-grid-template-columns: 60% 40%;
-column-gap: 2%;
+    grid-template-columns: 60% 40%;
+    column-gap: 2%;
 }
-ul{
+
+.presentacion__lista {
     box-shadow: none;
+    list-style: none;
 }
-li{padding: 0.4rem;}
-.__titulo--azul{
+
+.presentacion__item {
+    padding: 0.4rem;
+}
+
+.__titulo--azul {
     color: var(--color-azul);
+}
+
+.hago__titulo {
+    margin: 5% 0;
+    font-size: 2.5rem;
+    grid-area: titulo;
+}
+
+.hago_icon {
+    font-size: 4rem;
+    color: var(--color-texto);
+}
+
+.hago {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 5%;
+    grid-template-areas:"titulo titulo"
+                        "programacion formacion";
+}
+
+.hago__subtitulo {
+    font-size: 2rem;
+    color: var(--color-titulo);
 }
