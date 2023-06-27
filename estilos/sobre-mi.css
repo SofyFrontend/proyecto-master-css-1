@@ -31,15 +31,7 @@
 .__titulo--azul, .dato--azul {
     color: var(--color-azul);
 }
-.__titulo--azul::after{
-    content: "";
-    position: absolute;
-    background-image: -webkit-repeating-radial-gradient( center center, blue,blue 1px, transparent 0px, transparent 100%);
-    background-size: 1rem 1rem;
-    width: 5rem;
-    height: 5rem;
-    
-}
+
 .hago__titulo {
     margin: 5% 0;
     font-size: 2.5rem;
@@ -69,4 +61,26 @@
 }
 .hago_administracion{
     grid-area: admin;
+}
+.opiniones{
+    margin-top: 15%;
+    font-size: 2.5rem;
+}
+.opinion{
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5%;
+    grid-template-areas: "opi1 opi2";
+}
+.opinion_contenedor1{
+    grid-area: opi1;
+   
+}
+.opinion_contenedor2{
+    grid-area: opi2;
+   
+}
+.opinion-author{
+    font-size: 1.5rem;
 }
