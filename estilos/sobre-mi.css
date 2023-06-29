@@ -2,6 +2,7 @@
 .principal {
     /* hacer que el scroll de la web esté solo en la caja blanca que es la section */
     overflow: scroll;
+    background-color: #fff;
 }
 
 .principal_contenido {
