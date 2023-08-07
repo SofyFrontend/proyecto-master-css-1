@@ -76,11 +76,9 @@
 }
 .opinion_contenedor1{
     grid-area: opi1;
-   
 }
 .opinion_contenedor2{
     grid-area: opi2;
-   
 }
 .opinion-author{
     font-size: 1.5rem;
