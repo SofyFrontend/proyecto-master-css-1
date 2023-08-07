@@ -4,22 +4,40 @@
 
 }
 /* scroll para mozila  */
-
+/* en firefox no hay pseudoelementos como tal para modificar la barra de scroll,
+en su lugar se usan las propiedades para la modificar la barra   */
+.principal{
+    scrollbar-width: thin;
+    scrollbar-color: transparent;
+}
 /* scroll para chrome */
 
 /* ES EL CARRIL DEL SELECTOR DE SCROLL */
 .principal::-webkit-scrollbar{
-    width: 1rem;
-    background: grey;
+    width: 0.5rem;
+    background: transparent;
 
 }
+
 /* ES EL SELECTOR DE SCROLL */
 .principal::-webkit-scrollbar-thumb{
-    border: 1px solid blue;
+    border: 1px solid transparent;
 border-radius: 4rem;
 box-shadow: none;
 }
-.principal:hover:-webkit-scrollbar-thumb{
-    /* box-shadow: inset 0 0 0 10px var(--scrollbar-color); */
-    border: 3px solid green;
+
+/* como se comportar la barra de scroll al pasar el cursor por encima de la sección */
+.principal:hover::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 0 5px var(--scrollbar-color);
+}
+
+/* al hacer hover encima de del selector del scroll  */
+.principal::-webkit-scrollbar-thumb:hover{
+    border: 1px solid blue;
+}
+
+
+/* es la barra de scroll con todo los elementos que la componen(el carril y el selector) */
+.principal::-webkit-scrollbar-track{
+    margin: 40px 0px;
 }
