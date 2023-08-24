@@ -76,9 +76,21 @@
 }
 .opinion_contenedor1{
     grid-area: opi1;
+    border: 2px solid var(--color-borde-review);
+    border-radius: 2rem;
+    padding-top: 0;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 1.5rem;
 }
 .opinion_contenedor2{
     grid-area: opi2;
+    border: 2px solid var(--color-borde-review);
+    border-radius: 2rem;
+    padding-top: 0;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 1.5rem;
 }
 .opinion-author{
     font-size: 1.5rem;

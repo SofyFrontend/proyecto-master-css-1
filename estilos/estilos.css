@@ -28,6 +28,9 @@ a {
     --color-texto: #555;
     /* colores para los iconos */
     --color-iconos: #b5b6b7;
+    /* colores para las reseñas */
+    --color-borde-review: #e5e6e7;
+    --color-company: #a5a6a7;
 }
 
 html {
