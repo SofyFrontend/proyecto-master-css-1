@@ -69,6 +69,7 @@
 }
 .opinion{
     font-size: 1rem;
+    margin-top: 6rem;
     display: grid;
     grid-template-columns: auto auto;
     gap: 5%;
@@ -102,8 +103,24 @@
     max-width: 9rem;
     max-height: 9rem;
     border-radius: 9rem;
-    margin: 0 auto;
     margin-top: -4.5rem;
     margin-bottom: 2rem;
-
+box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.22);
+}
+.opinion-author, 
+.opinion-texto{
+    margin-bottom: 1rem;
+}
+.opinion-texto{
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+}
+.opi-autor{
+    margin-top: 2rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.opinion-author{
+    
 }
