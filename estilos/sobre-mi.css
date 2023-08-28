@@ -201,8 +201,9 @@ text-align: center;
 .precio__subtitulo{
     position: inline-block;
     margin-bottom: 3rem;
-    font-size: 3rem;
+    font-size: 1.5rem;
     position: relative;
+    color: var(--color-subtitulo);
 }
 .precio__subtitulo::after{
     content: "";
@@ -212,4 +213,8 @@ text-align: center;
     bottom: -0.3rem;
     height: 0.2rem;
     background-color: var(--color-azul);
+}
+.precio__number{
+    font-size: 4.2rem;
+    
 }
