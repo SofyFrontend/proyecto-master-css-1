@@ -11,7 +11,8 @@
 }
 
 .presentacion__titulo,
-.hago__clientes {
+.hago__clientes,
+.hago_precios {
     padding-bottom: 5%;
     font-size: 3rem;
 }
@@ -122,7 +123,8 @@
 
 .opinion-author,
 .opinion-texto,
-.clientes {
+.clientes,
+.precios {
     width: 100%;
     margin-bottom: 1rem;
 }
@@ -173,5 +175,30 @@
 .cliente__image{
     width: 145px;
     padding: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;}
+
+/* PRECIOS */
+
+.precio__contenedor{
+margin-bottom: 5rem;
+
+display: flex;
+flex-direction: row;
+text-align: center;
+}
+.precio__producto1:hover,
+.precio__producto2:hover{
+    box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1rem);
+}
+.precio__producto1,
+.precio__producto2{
+    flex-basis: 50%;
+    padding: 3rem;
+    margin-right: 3rem;
+    border: 2px solid var(--color-borde-review);
+    border-radius: 2rem;
+}
+.precio__subtitulo{
+    margin-bottom: 3rem;
 }
