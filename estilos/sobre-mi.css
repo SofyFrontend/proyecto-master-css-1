@@ -9,7 +9,8 @@
     padding: 5% 5%;
 }
 
-.presentacion__titulo {
+.presentacion__titulo,
+.hago__clientes {
     padding-bottom: 5%;
     font-size: 3rem;
 }
@@ -29,7 +30,8 @@
     padding: 0.4rem;
 }
 
-.__titulo--azul, .dato--azul {
+.__titulo--azul,
+.dato--azul {
     color: var(--color-azul);
 }
 
@@ -48,26 +50,30 @@
     display: grid;
     grid-template-columns: auto auto;
     gap: 5%;
-    grid-template-areas:"titulo titulo"
-                        "programacion formacion"
-                        "desarrollo admin";
+    grid-template-areas: "titulo titulo"
+        "programacion formacion"
+        "desarrollo admin";
 }
 
 .hago__subtitulo {
     font-size: 2rem;
     color: var(--color-titulo);
 }
-.hago_programacion{
+
+.hago_programacion {
     grid-area: desarrollo;
 }
-.hago_administracion{
+
+.hago_administracion {
     grid-area: admin;
 }
-.opiniones{
+
+.opiniones {
     margin-top: 15%;
     font-size: 2.5rem;
 }
-.opinion{
+
+.opinion {
     font-size: 1rem;
     margin-top: 6rem;
     display: grid;
@@ -75,7 +81,8 @@
     gap: 5%;
     grid-template-areas: "opi1 opi2";
 }
-.opinion_contenedor1{
+
+.opinion_contenedor1 {
     grid-area: opi1;
     border: 2px solid var(--color-borde-review);
     border-radius: 2rem;
@@ -84,7 +91,8 @@
     padding-left: 2.5rem;
     padding-bottom: 1.5rem;
 }
-.opinion_contenedor2{
+
+.opinion_contenedor2 {
     grid-area: opi2;
     border: 2px solid var(--color-borde-review);
     border-radius: 2rem;
@@ -93,45 +101,76 @@
     padding-left: 2.5rem;
     padding-bottom: 1.5rem;
 }
-.opinion-author{
+
+.opinion-author {
     font-size: 1.5rem;
 }
-.opinion-imagen{
+
+.opinion-imagen {
     width: 100%;
 }
-.opinion__imagen{
+
+.opinion__imagen {
     max-width: 9rem;
     max-height: 9rem;
     border-radius: 9rem;
     margin-top: -4.5rem;
     margin-bottom: 2rem;
-box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.22);
 }
-.opinion-author, 
-.opinion-texto{
+
+.opinion-author,
+.opinion-texto,
+.clientes {
+    width: 100%;
     margin-bottom: 1rem;
 }
-.opinion-texto{
+
+.opinion-texto {
     font-size: 1.5rem;
     line-height: 2.4rem;
 }
-.opi-autor{
+
+.opi-autor {
     margin-top: 2rem;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.opinion-author{
+
+.opinion-author {
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
 }
-.opinion_empresa{
+
+.opinion_empresa {
     color: var(--color-company);
     font-weight: 300;
     font-size: 1.3rem;
 }
-.opinion-author__icon{
+
+.opinion-author__icon {
     font-size: 4rem;
     opacity: 0.5;
-    color:var(--color-azul);
+    color: var(--color-azul);
+}
+.clientes__lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.cliente__logo{
+    display: block;
+    width: 100%;
+    opacity: 0.7;
+    transition: all 300ms linear;
+}
+.cliente__logo:hover{
+    opacity: 1;
+}
+.cliente__image{
+    width: 145px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
 }
