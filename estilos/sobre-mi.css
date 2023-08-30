@@ -218,3 +218,20 @@ text-align: center;
     font-size: 4.2rem;
     
 }
+.precio__boton{
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+}
+.precio__boton-enlace{
+    display: inline-block;
+    padding: 1.2rem 3.1rem;
+    border: 2px solid var(--color-borde-review);
+box-shadow: 0px 10px 10px var(--color-borde-review);
+border-radius: 3rem;
+transition: all 300ms ease-in;
+}
+.precio__boton-enlace:hover{
+    background-color: var(--color-azul);
+    color: var(--color-principal);
+    border: 2px solid var(--color-azul);
+}
