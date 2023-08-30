@@ -15,3 +15,26 @@
     --color-borde-review: #e5e6e7;
     --color-company: #a5a6a7;
 }
+
+.principal {
+    /* hacer que el scroll de la web esté solo en la caja blanca que es la section */
+    overflow: scroll;
+    background-color: #fff;
+}
+
+.principal_contenido {
+    padding: 5% 5%;
+    border-radius: 4rem 0 0 4rem;
+}
+
+.resumen_title{
+    padding-bottom: 5%;
+    font-size: 3rem;
+}
+
+.resumen__columnas {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    column-gap: 2%;
+}
+
