@@ -70,7 +70,9 @@ h6 {
 .nav_icon {
     color: var(--color-iconos);
 }
-
+.nav_icon-active{
+    color:var(--color-azul)
+}
 .nav_icon:hover {
     color: var(--color-azul);
     font-size: 1.2em;
