@@ -1,0 +1,17 @@
+/* hola de estilos especifica de la página estudios.html */
+/* variables de colores */
+:root {
+    /* colores principales en las web */
+    --color-principal: #fff;
+    --color-azul: #04B4E0;
+    --color-bg: #f0f4f6;
+    /* colores para las fuentes */
+    --color-titulo: #000;
+    --color-subtitulo: #888;
+    --color-texto: #555;
+    /* colores para los iconos */
+    --color-iconos: #b5b6b7;
+    /* colores para las reseñas */
+    --color-borde-review: #e5e6e7;
+    --color-company: #a5a6a7;
+}
