@@ -15,7 +15,9 @@
     --color-borde-review: #e5e6e7;
     --color-company: #a5a6a7;
 }
-
+header{
+    background-color: #fff;
+}
 .principal {
     /* hacer que el scroll de la web esté solo en la caja blanca que es la section */
     overflow: scroll;
