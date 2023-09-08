@@ -104,7 +104,7 @@ main {
     grid-area: nav;
 }
 
-header {
+.header {
     grid-area: header;
     background-color: var(--color-azul);
     height: 100%;
