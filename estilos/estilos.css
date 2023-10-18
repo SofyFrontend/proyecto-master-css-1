@@ -70,9 +70,11 @@ h6 {
 .nav_icon {
     color: var(--color-iconos);
 }
-.nav_icon-active{
-    color:var(--color-azul)
+
+.nav_icon-active {
+    color: var(--color-azul)
 }
+
 .nav_icon:hover {
     color: var(--color-azul);
     font-size: 1.2em;
@@ -196,7 +198,7 @@ main {
     border-radius: 4rem 0 0 4rem;
 }
 
-.menu{
+.menu {
     border-radius: 4rem;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.25);
 }
