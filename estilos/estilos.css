@@ -223,3 +223,6 @@ main {
     opacity: 1;
     width: 10%;
 }
+.dato--azul {
+    color: var(--color-azul);
+}
