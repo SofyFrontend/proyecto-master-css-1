@@ -95,11 +95,30 @@ margin-bottom: 1.5rem;
 }
 .timeline__year{
     color:var(--color-titulo);
-    margin:3px 0px;
+    margin:0.3rem 0px;
     line-height: 1.9rem;
+    font-size: 1.4rem;
 }
 
+.timeline__company{
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color:var(--color-company);
 
+}
+.timeline__description{
+    width: 70%;
+    padding-left: 2.5rem;
+    padding-right: 1.5rem;
+
+}
+.timeline__title{
+    color:var(--color-titulo);
+    font-size: 1.6rem;
+    margin-bottom: 0.3rem;
+    
+}
 /* columna de la derecha */
 .resumen__derecha{
     flex-basis: 41%;
