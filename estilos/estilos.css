@@ -51,8 +51,7 @@ body {
     background: var(--color-bg);
     background-image: url(../assets-proyecto1/img/fondo.png);
     background-size: cover;
-    /* para que no tengan scroll la página  */
-    overflow: hidden;
+    
 }
 
 h1 {
@@ -115,9 +114,6 @@ main {
     justify-content: space-evenly;
     align-items: center;
     border-radius: 4rem 0 0 4rem;
-    /* para poner un scroll dentro de una zona*/
-    /******* overflow: scroll;******/
-    /* fin de la propiedad  */
 
 }
 
