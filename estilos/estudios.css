@@ -57,7 +57,7 @@
     color: var(--color-titulo);
 }
 
-.resumen_subtitulo::after {
+/* .resumen_subtitulo::after {
     content: "";
     position: absolute;
     top: 15px;
@@ -67,7 +67,7 @@
     background-image: -webkit-repeating-radial-gradient(center center, var(--color-azul), var(--color-azul) 1px, transparent 0px, transparent 100%);
     background-size: 6px 6px;
     opacity: 0.5;
-}
+} */
 .resumen__contenedor{
     width: 100%;
     display: flex;
@@ -122,8 +122,12 @@ margin-bottom: 1.5rem;
 .timeline__text{
     font-size: 1.4rem;
 margin-bottom: 1rem;
-
 }
+.timeline__divider{
+    width: 1px;
+    background-color: var(--color-company);
+}
+
 /* columna de la derecha */
 .resumen__derecha{
     flex-basis: 41%;
