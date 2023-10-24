@@ -30,9 +30,22 @@
 .presentacion__titulo,
 .hago__clientes,
 .hago_precios {
+    position: relative;
     padding-bottom: 5%;
     font-size: 3rem;
 }
+
+.presentacion__titulo::after{
+        content: "";
+        position: absolute;
+        top: 0px;
+        right:570px;
+        width: 30px;
+        height: 20px;
+        background-image: -webkit-repeating-radial-gradient(center center, var(--color-azul), var(--color-azul) 1px, transparent 0px, transparent 100%);
+        background-size: 6px 6px;
+        opacity: 0.5;
+    }
 
 .presentacion_columnas {
     display: grid;
