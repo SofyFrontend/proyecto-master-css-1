@@ -228,3 +228,17 @@
 .skills__porcentaje--p80{
     width: 80%;
 }
+.knowledges__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.knowleges_option{
+    list-style: none;
+    background-color: var(--color-azul);
+    border-radius: 0.3rem;
+    color: var(--color-principal);
+    font-size: 1.3rem;
+    padding: 0.1rem 1rem;
+    margin: 0.3rem 0.3rem;
+}
