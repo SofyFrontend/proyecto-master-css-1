@@ -3,8 +3,8 @@
 :root {
     /* colores principales en las web */
     --color-principal: #fff;
-    --color-azul: #04B4E0;
-    /* opcion azul oscuro #1385a2 */
+    --color-azul: #1385a2;
+    /* opcion azul original: #04B4E0 */
     --color-bg: #f0f4f6;
     /* colores para las fuentes */
     --color-titulo: #000;
@@ -216,24 +216,30 @@
     border: 2px solid var(--color-principal);
     border-radius: 1rem;
 }
-.skills__porcentaje--p50{
+
+.skills__porcentaje--p50 {
     width: 50%;
 }
-.skills__porcentaje--p60{
+
+.skills__porcentaje--p60 {
     width: 60%;
 }
-.skills__porcentaje--p70{
+
+.skills__porcentaje--p70 {
     width: 70%;
 }
-.skills__porcentaje--p80{
+
+.skills__porcentaje--p80 {
     width: 80%;
 }
-.knowledges__list{
+
+.knowledges__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.knowleges_option{
+
+.knowleges_option {
     list-style: none;
     background-color: var(--color-azul);
     border-radius: 0.3rem;
@@ -241,4 +247,16 @@
     font-size: 1.3rem;
     padding: 0.1rem 1rem;
     margin: 0.3rem 0.3rem;
+}
+.certificados__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+}
+.certificado__item{
+    flex-basis: calc(50% - 3rem);
+    border: 1px solid var(--color-borde-review);
+
 }
