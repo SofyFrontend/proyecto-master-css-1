@@ -119,6 +119,11 @@ margin-bottom: 1.5rem;
     margin-bottom: 0.3rem;
     
 }
+.timeline__text{
+    font-size: 1.4rem;
+margin-bottom: 1rem;
+
+}
 /* columna de la derecha */
 .resumen__derecha{
     flex-basis: 41%;
