@@ -74,5 +74,25 @@
     left: 1rem;
     font-size: 1.1rem;
     background-color: var(--color-principal);
-    
+    color:var(--color-texto);
+    padding:0.1rem 0.7rem;
+    line-height:2rem;
+    z-index: 3;
+}
+.article__mask{
+    width: 100%;
+    height: 18.5rem;
+overflow: hidden;
+
+}
+.article__image{
+    width: 100%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    z-index: 1;
+}
+
+.article__top:hover .article__image{
+    transform: scale(1.1rem);
+
 }
