@@ -1,0 +1,51 @@
+/* hoja de estilo especifica de la página contacto.html */
+/* variables de colores */
+:root {
+    /* colores principales en las web */
+    --color-principal: #fff;
+    --color-azul: #1385a2;
+    /* opcion azul original: #04B4E0 */
+    --color-bg: #f0f4f6;
+    /* colores para las fuentes */
+    --color-titulo: #000;
+    --color-subtitulo: #888;
+    --color-texto: #555;
+    /* colores para los iconos */
+    --color-iconos: #b5b6b7;
+    /* colores para las reseñas */
+    --color-borde-review: #e5e6e7;
+    --color-company: #a5a6a7;
+    /* colores de la barra de scroll */
+    --scrollbar-color: #d3d3d3;
+    /*color para los certificados  */
+    --color-certificados: #f5f5f5;
+}
+
+.principal {
+    /* hacer que el scroll de la web esté solo en la caja blanca que es la section */
+    overflow: scroll;
+    background-color: #fff;
+}
+
+.principal_contenido {
+    padding: 5% 5%;
+    border-radius: 4rem 0 0 4rem;
+}
+
+.resumen_title {
+    position: relative;
+    padding-bottom: 5%;
+    font-size: 3rem;
+}
+
+.resumen_title::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 560px;
+    width: 30px;
+    height: 20px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color-azul), var(--color-azul) 1px, transparent 0px, transparent 100%);
+    background-size: 6px 6px;
+    opacity: 0.5;
+}
