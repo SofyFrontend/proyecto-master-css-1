@@ -80,5 +80,20 @@
 
 }
 .contact__subtitle{
-    
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.contact__form-header{
+    display: inline-block;
+    padding-right: 1.2rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+.form-header__title{
+    font-size: 2.1rem;
+}
+.form__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
