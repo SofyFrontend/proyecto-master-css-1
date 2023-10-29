@@ -144,7 +144,8 @@ line-height: 2.1rem;
     transition: all 200ms ease-in-out;
     pointer-events: none;
 }
-.form__input:focus~label{
+.form__input:focus~label,
+.form__input:not(:placeholder-shown)~label{
     top: -2rem;
     left: 0;
     z-index: 1;
@@ -171,4 +172,20 @@ color: var(--color-azul);
 
 .form__group--textarea {
     height: 100%;
+}
+.form__buttom{
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border: 0.2rem solid var(--color-azul);
+    color: var(--color-titulo);
+    background-color: var(--color-principal);
+    border-radius: 3rem;
+    box-shadow: 0 1rem 1rem -8px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    transition: all 300ms linear;
+}
+.form__buttom:hover{
+background-color: var(--color-azul);
+color: var(--color-principal);
+
 }
