@@ -3,10 +3,12 @@
     --color-principal: #fff;
     --color-azul: #1385a2;}
 .loader {
+    margin: 0 auto;
+    margin-top: 20px;
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    display: inline-block;
+    display: block;
     position: relative;
     border: 2px solid var(--color-azul);
     box-sizing: border-box;
