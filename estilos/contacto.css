@@ -125,7 +125,7 @@
     outline: none;
     box-shadow: 0 1rem 1rem -8px rgba(0, 0, 0, 0.1);
     background: transparent;
-line-height: 2.1rem;
+    line-height: 2.1rem;
     font-size: 1.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -133,9 +133,11 @@ line-height: 2.1rem;
     padding-right: 2.5rem;
 
 }
-.form__input:focus{
+
+.form__input:focus {
     border: 0.3rem solid var(--color-azul);
 }
+
 .form_label {
     position: absolute;
     top: 1rem;
@@ -144,20 +146,24 @@ line-height: 2.1rem;
     transition: all 200ms ease-in-out;
     pointer-events: none;
 }
+
 .form__input:focus~label,
-.form__input:not(:placeholder-shown)~label{
+.form__input:not(:placeholder-shown)~label {
     top: -2rem;
     left: 0;
     z-index: 1;
     font-size: 1.3rem;
-color: var(--color-azul);
+    color: var(--color-azul);
 }
-.form__input::-webkit-input-placeholder{
+
+.form__input::-webkit-input-placeholder {
     color: transparent;
 }
-.form__input::-moz-placeholder{
+
+.form__input::-moz-placeholder {
     color: transparent;
 }
+
 .form_right {
     flex-basis: 50%;
     max-width: 100%;
@@ -173,7 +179,8 @@ color: var(--color-azul);
 .form__group--textarea {
     height: 100%;
 }
-.form__buttom{
+
+.form__buttom {
     padding: 1rem 3rem;
     font-size: 1.5rem;
     border: 0.2rem solid var(--color-azul);
@@ -184,8 +191,21 @@ color: var(--color-azul);
     cursor: pointer;
     transition: all 300ms linear;
 }
-.form__buttom:hover{
-background-color: var(--color-azul);
-color: var(--color-principal);
 
+.form__buttom:hover {
+    background-color: var(--color-azul);
+    color: var(--color-principal);
+}
+
+.contact__map {
+    width: 100%;
+    min-height: 15rem;
+    margin-bottom: 3.5rem;
+    overflow: hidden;
+}
+
+.contact__iframe {
+    width: 100%;
+    height: 14rem;
+    
 }
