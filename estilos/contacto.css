@@ -133,7 +133,9 @@
     padding-right: 2.5rem;
 
 }
-
+.form__input:focus{
+    border: 0.3rem solid var(--color-azul);
+}
 .form_label {}
 
 .form_right {
