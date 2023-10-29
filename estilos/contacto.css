@@ -140,9 +140,9 @@ line-height: 2.1rem;
     position: absolute;
     top: 1rem;
     left: 1.5rem;
-    z-index: -1;
     color: var(--color-company);
     transition: all 200ms ease-in-out;
+    pointer-events: none;
 }
 .form__input:focus~label{
     top: -2rem;
@@ -150,6 +150,12 @@ line-height: 2.1rem;
     z-index: 1;
     font-size: 1.3rem;
 color: var(--color-azul);
+}
+.form__input::-webkit-input-placeholder{
+    color: transparent;
+}
+.form__input::-moz-placeholder{
+    color: transparent;
 }
 .form_right {
     flex-basis: 50%;
