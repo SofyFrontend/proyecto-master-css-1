@@ -1,0 +1,25 @@
+@media (max-width: 1490px) {
+    body{
+        padding: 0;
+    }
+    .layout {
+        min-width: auto;
+        width: 85%; 
+
+    }
+}
+@media(max-width: 1320px){
+    .layout{
+        width: 89%;
+        margin-left: 3rem;
+    }
+}
+@media  (max-width: 1160px){
+    .layout{
+        width: 85%;
+        margin-left: 4rem;
+    }
+    .certificados__container{
+        flex-basis: 100%;
+    }
+}
