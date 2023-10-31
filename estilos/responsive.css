@@ -42,6 +42,14 @@ grid-template-areas: "section";
         background-color: var(--color-principal);
         height: 100vh;
     }
-    
+    .menu{
+        position: static;
+    }
+}
+
+@media (max-width:800px){
+    .opinion{
+        flex-basis: 100%;
+    }
 }
 
