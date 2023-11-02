@@ -57,6 +57,13 @@ grid-template-areas: "section";
         flex-basis: 100%;
         gap: 5rem;
     }
-    
+    .opinion-imagen{
+        text-align: center;
+    }
+    .clientes__lista{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
 }
-
