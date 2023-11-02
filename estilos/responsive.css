@@ -133,4 +133,20 @@
         line-height: 5.6rem;
         text-align: center;
     }
+
+    .gallery__item {
+        flex-basis: 100%;
+    }
+
+    .form__left {
+        flex-basis: 100%;
+    }
+
+    .form__input {
+        flex-basis: 100%;
+    }
+
+    .form__container {
+        flex-direction: column;
+    }
 }
