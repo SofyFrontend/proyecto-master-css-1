@@ -138,10 +138,8 @@
         flex-basis: 100%;
     }
 
-    .form__left {
-        flex-basis: 100%;
-    }
-
+    .form__left,
+    .form_right,
     .form__input {
         flex-basis: 100%;
     }
