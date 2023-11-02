@@ -74,12 +74,24 @@
         max-width: 330px;
         top:0;
         right: 0;
+        bottom: 0;
+        border-radius: 0;
+text-align: center;
+overflow: auto;
+transition: all 500ms ease-in-out;
+        background-color: var(--color-azul);
     }
 
     .menu {
-        display: none;
+        position: static;
+        margin: 3rem 0rem;
     }
-
+.cabecera__circulo{
+    width: 13rem;
+    margin-top: 0;
+    display: inline-block;
+    
+}
     .principal_contenido {
         border-radius: 0;
         background-color: var(--color-principal);
