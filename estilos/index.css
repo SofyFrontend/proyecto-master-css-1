@@ -5,6 +5,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* para que no tengan scroll la página  */
+    overflow: hidden;
 }
 .principal__titulo-h2{
     font-size: 5rem;

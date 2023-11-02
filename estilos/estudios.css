@@ -3,7 +3,8 @@
 :root {
     /* colores principales en las web */
     --color-principal: #fff;
-    --color-azul: #04B4E0;
+    --color-azul: #1385a2;
+    /* opcion azul original: #04B4E0 */
     --color-bg: #f0f4f6;
     /* colores para las fuentes */
     --color-titulo: #000;
@@ -16,6 +17,8 @@
     --color-company: #a5a6a7;
     /* colores de la barra de scroll */
     --scrollbar-color: #d3d3d3;
+    /*color para los certificados  */
+    --color-certificados: #f5f5f5;
 }
 
 .principal {
@@ -34,17 +37,19 @@
     padding-bottom: 5%;
     font-size: 3rem;
 }
+
 .resumen_title::after {
     content: "";
     position: absolute;
     top: 0px;
-    right:540px;
+    right: 540px;
     width: 30px;
     height: 20px;
     background-image: -webkit-repeating-radial-gradient(center center, var(--color-azul), var(--color-azul) 1px, transparent 0px, transparent 100%);
     background-size: 6px 6px;
     opacity: 0.5;
 }
+
 .resumen__columnas {
     display: grid;
     grid-template-columns: 60% 40%;
@@ -172,4 +177,124 @@
 /* columna de la derecha */
 .resumen__derecha {
     flex-basis: 41%;
+}
+
+.resumen__skills {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.skills__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__text {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.4rem;
+    color: var(--color-titulo);
+}
+
+.skills__number {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.4rem;
+    color: var(--color-subtitulo);
+}
+
+.skills___progresbar {
+    width: 100%;
+    height: 1rem;
+    border: 1px solid var(--color-azul);
+    border-radius: 1rem;
+    background-color: var(--color-principal);
+    margin-bottom: 1rem;
+}
+
+.skills__porcentaje {
+    height: 0.8rem;
+    background-color: var(--color-azul);
+    border: 2px solid var(--color-principal);
+    border-radius: 1rem;
+}
+
+.skills__porcentaje--p50 {
+    width: 50%;
+}
+
+.skills__porcentaje--p60 {
+    width: 60%;
+}
+
+.skills__porcentaje--p70 {
+    width: 70%;
+}
+
+.skills__porcentaje--p80 {
+    width: 80%;
+}
+
+.knowledges__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.knowleges_option {
+    list-style: none;
+    background-color: var(--color-azul);
+    border-radius: 0.3rem;
+    color: var(--color-principal);
+    font-size: 1.3rem;
+    padding: 0.1rem 1rem;
+    margin: 0.3rem 0.3rem;
+}
+.certificados__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+}
+.certificado__item{
+    flex-basis: calc(50% - 1.5rem);
+    border: 1px solid var(--color-borde-review);
+border-radius: 0.8rem;
+display: flex;
+flex-direction: row;
+
+}
+.certificado__Logo{
+    width: 15rem;
+    height: 100%;
+    padding: 2.5rem;
+    background-color: var(--color-certificados);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.certificado__imagen{
+    width: 100%;
+}
+
+.certificado__content{
+    padding: 2rem 2.5rem;
+}
+.certificado__title{
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+
+}
+.certificado__id{
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+    color: var(--color-subtitulo);
+}
+.certificado__date{
+    font-size: 1.2rem;
+    color:var(--color-subtitulo);
+    opacity: 0.7;
+
 }

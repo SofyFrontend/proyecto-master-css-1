@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>Master en CSS proyecto 1</title>
     <!-- hoja de estylos de fontawenome -->
     <link rel="stylesheet" href="assets-proyecto1/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
@@ -10,8 +11,17 @@
     <link rel="stylesheet" href="assets-proyecto1/fonts/poppins/poppins.css">
     <!-- hola de stylos comunes -->
     <link rel="stylesheet" href="estilos/estilos.css">
-    
+    <!-- hoja de estilo de la barra de navegación -->
+    <link rel="stylesheet" href="estilos/scroll.css">
+    <!-- hoja de estilos especifica -->
+    <link rel="stylesheet" href="estilos/contacto.css">
+    <!-- hoja de estilos del loader -->
+    <link rel="stylesheet" href="estilos/loader.css">
+    <!-- hoja de estilos para el responsive -->
+    <link rel="stylesheet" href="estilos/responsive.css">
+<script src="js/map.js" defer></script>
 </head>
+
 <body>
     <div class="layout">
 
@@ -34,13 +44,74 @@
                 <a href="#" class="boton__enlace">Descargar CV</a>
             </div>
             <!-- fin del codigo del boton -->
-            <div class="cabecer__pie"><span>&copy;2024 <a href="http://sofyfrontend.es" target="_blank">Sofy Frontend</a></span> </div>
+            <div class="cabecer__pie"><span>&copy;2024 <a href="http://sofyfrontend.es" target="_blank">Sofy
+                        Frontend</a></span> </div>
         </header>
+        <div class="layout__menu-toggle">
+            <i class="menu-toggle__icon fa-solid fa-bars "></i>
+            <i class="menu-toggle__icon fa-solid fa-xmark "></i>
+        </div>
         <section class="principal">
             <div class="principal_contenido">
                 <!-- aqui va el contenido principal de la web  -->
+                <div class="resumen_header">
+                    <h2 class="resumen_title">Contacto</h2>
+                </div>
+                <div class="contact__container">
+                    <section class="contact__info">
+                        <div class="contact__data"><i class=" contact__icon fa-solid fa-location-dot dato--azul"></i>
+                            <h2 class="contact__subtitle">Lanzarote</h2>
+                        </div>
+                        <div class="contact__data"><i class=" contact__icon fa-solid fa-phone dato--azul"></i>
+                            <h2 class="contact__subtitle">928 22 22 22</h2>
+                        </div>
+                        <div class="contact__data"><i class=" contact__icon fa-solid fa-envelope dato--azul"></i>
+                            <h2 class="contact__subtitle">algo@correo.es</h2>
+                        </div>
+                        <div class="contact__data"><i class=" contact__icon fa-solid fa-circle-check dato--azul"></i>
+                            <h2 class="contact__subtitle">Desarrolladora Freelance</h2>
+                        </div>
+                    </section>
+                    <section class="contact__form-box">
+                        <div class="contact__map" id="load-iframe-map">
+                            <span class="loader"></span>
+                        </div>
+                        <header class="contact__form-header">
+                            <h3 class="form-header__title">¿Cómo puedo <span class="dato--azul">ayudarte?</span></h3>
+                        </header>
 
+                        <form action="" class="contact__form">
+                            <div class="form__container">
+                                <section class="form__left">
+                                    <div class="form__group"><input type="text" class="form__input" name="nombre"
+                                            id="nombre" required placeholder="Nombre">
+                                        <label for="nombre" class="form_label">Nombre</label>
+                                    </div>
 
+                                    <div class="form__group"><input type="email" class="form__input" name="email"
+                                            id="email" required placeholder="E-mail">
+                                        <label for="email" class="form_label">E-mail</label>
+                                    </div>
+
+                                    <div class="form__group"><input type="text" class="form__input" name="subject"
+                                            id="subject" required placeholder="Asunto">
+                                        <label for="subject" class="form_label">Asunto</label>
+                                    </div>
+                                </section>
+                                <section class="form_right">
+                                    <div class="form__group form__group--textarea">
+                                        <textarea class="form__input form__input--text-area" name="mensaje" id="mensaje"
+                                            required placeholder="Mensaje"></textarea>
+                                        <label for="mensaje" class="form_label">Mensaje</label>
+                                    </div>
+                                </section>
+                                
+                            </div>
+                            <input type="submit" value="Enviar mensaje" class="form__buttom">
+                        </form>
+
+                    </section>
+                </div>
                 <!-- aqui finaliza el contenido principal de la web -->
             </div>
         </section>
@@ -56,10 +127,12 @@
                         <span class="nav__overlay">Portafolio</span></a></li>
                 <li class="menu__item"><a href="blog.html"><i class="nav_icon fa-solid fa-book"></i>
                         <span class="nav__overlay">Blog</span></a></li>
-                <li class="menu__item"><a href="contacto.html"><i class="nav_icon fa-solid fa-envelope nav_icon-active"></i>
+                <li class="menu__item"><a href="contacto.html"><i
+                            class="nav_icon fa-solid fa-envelope nav_icon-active"></i>
                         <span class="nav__overlay">Contacto</span></a></li>
             </ul>
         </nav>
     </div>
 </body>
+
 </html>

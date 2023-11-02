@@ -11,3 +11,5 @@ Para este protecto se usa:
 ![CSS](https://github.com/SofyFrontend/badges/blob/main/css-3.svg)
 
 ![FontAwesome](https://github.com/SofyFrontend/badges/blob/main/font-awesome.svg)
+
+![JavaScriot](https://github.com/SofyFrontend/badges/blob/main/javascript.svg)

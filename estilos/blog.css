@@ -1,0 +1,141 @@
+/* hola de estilos especifica de la página blog.html */
+/* variables de colores */
+:root {
+    /* colores principales en las web */
+    --color-principal: #fff;
+    --color-azul: #1385a2;
+    /* opcion azul original: #04B4E0 */
+    --color-bg: #f0f4f6;
+    /* colores para las fuentes */
+    --color-titulo: #000;
+    --color-subtitulo: #888;
+    --color-texto: #555;
+    /* colores para los iconos */
+    --color-iconos: #b5b6b7;
+    /* colores para las reseñas */
+    --color-borde-review: #e5e6e7;
+    --color-company: #a5a6a7;
+    /* colores de la barra de scroll */
+    --scrollbar-color: #d3d3d3;
+    /*color para los certificados  */
+    --color-certificados: #f5f5f5;
+}
+
+.principal {
+    /* hacer que el scroll de la web esté solo en la caja blanca que es la section */
+    overflow: scroll;
+    background-color: #fff;
+}
+
+.principal_contenido {
+    padding: 5% 5%;
+    border-radius: 4rem 0 0 4rem;
+}
+
+.resumen_title {
+    position: relative;
+    padding-bottom: 5%;
+    font-size: 3rem;
+}
+
+.resumen_title::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 630px;
+    width: 30px;
+    height: 20px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color-azul), var(--color-azul) 1px, transparent 0px, transparent 100%);
+    background-size: 6px 6px;
+    opacity: 0.5;
+}
+
+.blog__articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+
+}
+
+.articles__article {
+    flex-basis: 50%;
+    padding: 0 1.5rem;
+    padding-bottom: 3.5rem;
+
+}
+
+.article__top {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.article__category {
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+    font-size: 1.1rem;
+    background-color: var(--color-principal);
+    color: var(--color-texto);
+    padding: 0.1rem 0.7rem;
+    line-height: 2rem;
+    z-index: 3;
+}
+
+.article__mask {
+    width: 100%;
+    height: 18.5rem;
+    overflow: hidden;
+
+}
+
+.article__image {
+    width: 100%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    z-index: 1;
+}
+
+.article__top:hover .article__image {
+    transform: scale(1.1);
+}
+
+.article__logo {
+    transition: all 200ms ease-in-out;
+    opacity: 0;
+}
+
+.article__icon {
+    position: absolute;
+    top: calc(50% - 2.2rem);
+    left: calc(50% - 2.2rem);
+    font-size: 4.4rem;
+    width: 4.4rem;
+    color: var(--color-principal);
+    text-align: center;
+}
+
+.article__top:hover .article__logo {
+    opacity: 1;
+}
+
+.article__bottom {
+    margin: 0;
+    padding: 2.1rem;
+    padding-top: 1.5rem;
+    border: 0.1rem solid var(--color-borde-review);
+    border-top: 0;
+}
+
+.article__date {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--color-subtitulo);
+}
+
+.article_title {
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+}

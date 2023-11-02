@@ -1,0 +1,142 @@
+/* hola de estilos especifica de la página portafolio.html */
+/* variables de colores */
+:root {
+    /* colores principales en las web */
+    --color-principal: #fff;
+    --color-azul: #1385a2;
+    /* opcion azul original: #04B4E0 */
+    --color-bg: #f0f4f6;
+    /* colores para las fuentes */
+    --color-titulo: #000;
+    --color-subtitulo: #888;
+    --color-texto: #555;
+    /* colores para los iconos */
+    --color-iconos: #b5b6b7;
+    /* colores para las reseñas */
+    --color-borde-review: #e5e6e7;
+    --color-company: #a5a6a7;
+    /* colores de la barra de scroll */
+    --scrollbar-color: #d3d3d3;
+    /*color para los certificados  */
+    --color-certificados: #f5f5f5;
+}
+
+.principal {
+    /* hacer que el scroll de la web esté solo en la caja blanca que es la section */
+    overflow: scroll;
+    background-color: #fff;
+}
+
+.principal_contenido {
+    padding: 5% 5%;
+    border-radius: 4rem 0 0 4rem;
+}
+
+.resumen_title {
+    position: relative;
+    padding-bottom: 5%;
+    font-size: 3rem;
+}
+
+.resumen_title::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 560px;
+    width: 30px;
+    height: 20px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color-azul), var(--color-azul) 1px, transparent 0px, transparent 100%);
+    background-size: 6px 6px;
+    opacity: 0.5;
+}
+
+.portafolio__navbar {
+    margin-bottom: 3rem;
+}
+
+.portafolio__menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem
+}
+
+.portafolio__option {
+    font: 1.3rem;
+    opacity: 0.7;
+}
+
+.portafolio__option--active {
+    opacity: 1;
+    font-weight: bold;
+
+}
+
+.portafolio__link {
+    color: var(--color-texto);
+}
+
+.portafolio__link:hover {
+    color: var(--color-azul);
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+}
+
+.portafolio__gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+/* al pasar el cursos el tamaño del contenedor no cambia dando
+sensacion de que hace zoom en la imagen, y no que cambia de tamaño */
+.gallery__container-image {
+    overflow: hidden;
+}
+
+.gallery__item {
+    flex-basis: 33%;
+    padding: 0.7rem;
+    position: relative;
+}
+
+.gallery__image {
+    width: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+.gallery__item:hover .gallery__image {
+    transform: scale(1.1);
+}
+
+.gallery__icon {
+    opacity: 0;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 3rem;
+    background-color: var(--color-principal);
+    color: var(--color-azul);
+    transition: all 450ms ease-in-out;
+}
+
+.gallery__category {
+    opacity: 0;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    padding: 0.2rem 0.7rem;
+    font-size: 1.1rem;
+    background-color: var(--color-principal);
+    color: var(--color-texto);
+    transition: all 450ms ease-in-out;
+}
+.gallery__item:hover .gallery__category,
+.gallery__item:hover .gallery__icon{
+    opacity: 1;
+}
