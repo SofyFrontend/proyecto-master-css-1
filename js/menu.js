@@ -21,3 +21,16 @@ document.addEventListener('DOMContentLoaded', (event)=>{
         }
     })
 })
+
+//cuando se redimenciona la pantalla que si el menu esta 
+// desplegado se cierre automáticamente
+
+window.addEventListener("resize", (event)=>{
+    let size = parseInt(document.body.clientWidth);
+
+    if(size <=1060){
+        aside.classList.remove("header--visible");
+            icon_bars.style.opacity=1;
+            icon_xmark.style.opacity=0;
+    }
+})
