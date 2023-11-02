@@ -64,7 +64,7 @@
 
     .layout__menu-toggle {
         z-index: 9999;
-        display: none;
+        /* display: none; */
         position: absolute;
         right: 1rem;
         top: 1rem;
@@ -90,7 +90,7 @@
         opacity: 0;
     }
     .fa-xmark {
-        display: none;
+        opacity: 1;
     }
 
     .menu {
