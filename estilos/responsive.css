@@ -48,7 +48,7 @@
     }
 
     .layout__menu-toggle {
-        display: block;
+        display: none;
         position: absolute;
         right: 1rem;
         top: 1rem;
@@ -58,16 +58,24 @@
         line-height: 4.8rem;
         text-align: center;
         background-color: var(--color-azul);
-        color:var(--color-principal);
+        color: var(--color-principal);
         border-radius: 3rem;
-        cursor:pointer;
+        cursor: pointer;
         transition: all 500ms ease-in-out;
     }
-    .fa-xmark{
+
+    .fa-xmark {
         display: none;
     }
 
-    .header,
+    .header {
+        display: block;
+        position: absolute;
+        max-width: 330px;
+        top:0;
+        right: 0;
+    }
+
     .menu {
         display: none;
     }
