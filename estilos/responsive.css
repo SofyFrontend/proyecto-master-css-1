@@ -39,6 +39,7 @@
     }
 
     .layout {
+        position: relative;
         width: 100%;
         height: 100%;
         margin: 0;
@@ -47,6 +48,29 @@
         grid-template-areas: "section";
     }
 
+    .header {
+        /* display: block; */
+        position:absolute ;
+        max-width: 330px;
+        top: 0;
+        right: 0;
+        border-radius: 0;
+        text-align: center;
+        overflow: auto;
+        transition: all 500ms ease-in-out;
+        background-color: var(--color-azul);
+        z-index: 5;
+    }
+.header--visible{
+    width: 100%;
+    margin-right:0;
+    opacity: 1;
+}
+.header--hidden{
+    width: 100%;
+    margin-right:100%;
+    opacity: 0;
+}
     .layout__menu-toggle {
         display: none;
         position: absolute;
@@ -66,21 +90,6 @@
 
     .fa-xmark {
         display: none;
-    }
-
-    .header {
-        display: block;
-        position: static;
-        max-width: 330px;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        border-radius: 0;
-        text-align: center;
-        overflow: auto;
-        transition: all 500ms ease-in-out;
-        background-color: var(--color-azul);
-        z-index: 5;
     }
 
     .menu {
