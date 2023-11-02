@@ -93,9 +93,21 @@
 }
 
 @media(max-width: 585px) {
-
+.presentacion_columnas{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.hago{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
     .extra__contenedor {
         flex-direction: column;
         gap: 2rem;
+    }
+    .resumen__contenedor{
+        flex-direction: column;
     }
 }
