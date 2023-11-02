@@ -110,4 +110,11 @@
     .resumen__contenedor{
         flex-direction: column;
     }
+    .resumen__derecha{
+        flex-basis: 100%;
+        margin-bottom: 4rem;
+    }
+    .contact__container{
+        flex-direction: column;
+    }
 }
