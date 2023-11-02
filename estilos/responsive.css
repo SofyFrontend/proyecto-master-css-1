@@ -48,8 +48,15 @@ grid-template-areas: "section";
 }
 
 @media (max-width:800px){
-    .opinion{
-        flex-basis: 100%;
+    .cabecera__circulo::after {
+        display: none;
     }
+    .opinion{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        gap: 5rem;
+    }
+    
 }
 
