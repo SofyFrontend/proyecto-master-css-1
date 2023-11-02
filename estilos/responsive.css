@@ -70,28 +70,31 @@
 
     .header {
         display: block;
-        position: absolute;
+        position: static;
         max-width: 330px;
-        top:0;
+        top: 0;
         right: 0;
         bottom: 0;
         border-radius: 0;
-text-align: center;
-overflow: auto;
-transition: all 500ms ease-in-out;
+        text-align: center;
+        overflow: auto;
+        transition: all 500ms ease-in-out;
         background-color: var(--color-azul);
+        z-index: 5;
     }
 
     .menu {
         position: static;
         margin: 3rem 0rem;
     }
-.cabecera__circulo{
-    width: 13rem;
-    margin-top: 0;
-    display: inline-block;
-    
-}
+
+    .cabecera__circulo {
+        width: 13rem;
+        margin-top: 0;
+        display: inline-block;
+
+    }
+
     .principal_contenido {
         border-radius: 0;
         background-color: var(--color-principal);
@@ -99,6 +102,7 @@ transition: all 500ms ease-in-out;
     }
 
     .menu {
+        display: none;
         position: static;
     }
 }
